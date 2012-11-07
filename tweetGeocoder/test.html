@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>tweetGeocoder.js Test Page</title>
+		<link rel="stylesheet" href="css/test.css" />
+		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+		<!-- jQuery-->
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Google Maps-->
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<!-- tweetGeocoder library -->
+		<script type="text/javascript" src="js/tweetGeocoder.js"></script>
+		<!-- test.html-specific JavaScript-->
+		<script type="text/javascript" src="js/test.js"></script>
+	</head>
+	<body>
+		<div id="testControls">
+			<div class="header">
+				tweetGeocoder Test
+			</div>
+			<input id="search" value="olympics" type="text" />
+			<select id="max_results">
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</select>
+			<input id="include_entities" type="checkbox" />
+			Include entities?
+			<input id="set_interval" type="checkbox" checked="true" />
+			Auto setInterval?
+			<input id="submit" type="submit" value="Search Twitter" />
+			<input id="clear_results" type="submit" value="Clear Results" />
+		</div>
+		<div id="testResults">
+			<div id="resultHolder">
+				&nbsp;
+			</div>
+		</div>
+	</body>
+</html>
